@@ -2,6 +2,8 @@
 
 A Chrome extension that automatically intercepts RIS file downloads from Nature and Springer websites, converts them to BibTeX format, and displays the result in a popup modal for easy copying.
 
+**Why does nature not provide bibtex citation download???**
+
 ## Features
 
 - **Automatic Interception**: Detects `.ris` downloads from `nature.com` and `springer.com`.
