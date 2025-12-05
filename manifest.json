@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Nature RIS to BibTeX",
+  "description": "Automatically converts RIS downloads from Nature and Springer to BibTeX.",
+  "version": "1.1",
+  "permissions": ["downloads", "activeTab", "scripting"],
+  "host_permissions": [
+    "*://*.nature.com/*",
+    "*://*.springer.com/*",
+    "*://*.springernature.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.nature.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
